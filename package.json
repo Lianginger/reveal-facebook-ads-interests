@@ -1,0 +1,25 @@
+{
+  "name": "reveal-facebook-ads-interests",
+  "version": "1.0.0",
+  "description": "reveal-facebook-ads-interests",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lianginger/reveal-facebook-ads-interests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lianginger/reveal-facebook-ads-interests/issues"
+  },
+  "homepage": "https://github.com/Lianginger/reveal-facebook-ads-interests#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1"
+  }
+}
