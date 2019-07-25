@@ -1,18 +1,31 @@
 <div class="container">
-  <h1 class="text-center">Cool Marketing</h1>
-  <div class="search">
+  <h1 class="text-center m-3">Cool Marketing</h1>
+  <div class="search text-center">
     <form action="/">
       <input type="text" value="{{keyword}}" name="keyword">
       <button type="submit">Submit</button>
     </form>
+    <p>輸入英文才會顯示相關興趣</p>
   </div>
+  <br>
+  <hr>
   <div class="display">
     <div class="row">
       <div class="col-sm-6">
-
+        <h4>直接興趣</h4>
+        <ul>
+          {{#each adinterest.data}}
+          <li>{{this.name}}-{{this.audience_size}}</li>
+          {{/each}}
+        </ul> 
       </div>
       <div class="col-sm-6">
-      
+        <h4>相關興趣</h4>
+        <ul>
+          {{#each adinterestsuggestion.data}}
+          <li>{{this.name}}-{{this.audience_size}}</li>
+          {{/each}}
+        </ul>
       </div>
     </div>
   </div>
