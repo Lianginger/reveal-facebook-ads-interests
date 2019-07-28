@@ -14,7 +14,7 @@ module.exports = async function translate(
   // The target language
   const target = 'en'
 
-  // Translates some text into Russian
+  // Translates some text into English
   const [translation] = await translate.translate(text, target)
   console.log(`Text: ${text}`)
   console.log(`Translation: ${translation}`)
